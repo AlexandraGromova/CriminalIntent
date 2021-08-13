@@ -1,10 +1,12 @@
 package com.bignerdranch.database
 
+import androidx.room.ProvidedTypeConverter
 import androidx.room.TypeConverter
 import java.util.*
 import java.util.Date
 import java.util.UUID
 
+@ProvidedTypeConverter
 class TypeConverter {
     @TypeConverter
     fun fromDate(date: Date?): Long?{
